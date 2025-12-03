@@ -19,6 +19,23 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
+
+
+body{
+  width: 100%;
+  margin: 0 auto;
+  background-image:
+          linear-gradient(
+                          rgba(250, 201, 122, 0.85),
+                          rgba(250, 201, 122, 0.85)
+          ),
+          url("../images/15ec7c20-96cc-4e00-9583-a675acb1e141.jpg");
+  background-size: auto, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.18);
+}
+
 .bg-body-tertiary{
   background-color: #D66344 !important;
 }
@@ -62,5 +79,78 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .navbar-nav .nav-item:last-child {
   margin-right: 0; /* fjerner margin på sidste item */
+}
+
+.headerbil{
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .headerbil{
+    height: 775px;
+    object-fit: cover;
+  }
+}
+
+.velkommenboks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.velkommenboks p{
+  width: 90%;
+}
+
+.accordion-button.collapsed {
+  background-color: #F5C87A; /* blå baggrund */
+}
+
+.accordion-button {
+  background-color: #F5C87A; /* mørkere blå */
+}
+
+/* Fjern alle borders og shadows */
+.accordion-item {
+  border: none !important;      /* fjerner ydre kant */
+}
+
+.accordion-button {
+  border: none !important;      /* fjerner knap border */
+  box-shadow: none !important;  /* fjerner skygge */
+}
+
+/* Collapsed tilstand */
+.accordion-button.collapsed {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-body {
+  width: 90%;        /* ønsket bredde */
+  max-width: 1300px;  /* valgfri begrænsning */
+  margin: 0 auto;    /* centrerer indholdet */
+  background-color: #F5C87A; /* blå farve */
+}
+
+@media (max-width: 992px) {
+  .accordion-body {
+    width: 90%;        /* ønsket bredde */
+    max-width: 400px;  /* valgfri begrænsning */
+    margin: 0 auto;    /* centrerer indholdet */
+  }
+}
+
+/* Accordion item baggrund */
+.accordion-item {
+  background-color: #F5C87A; /* sæt den ønskede farve */
+}
+
+/* Accordion-knappen når åben */
+.accordion-button:not(.collapsed) {
+  background-color: #E6B566; /* den farve du ønsker */
+  color: black;              /* ændrer tekstfarve, hvis nødvendigt */
 }
 
