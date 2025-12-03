@@ -19,6 +19,48 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
-.bru{
-  color: hotpink;
+.bg-body-tertiary{
+  background-color: #D66344 !important;
 }
+
+.navbar .nav-link {
+  color: #F8EEDC !important;
+}
+
+.navbar .nav-link:hover {
+  color: #C6BEB0 !important;
+}
+
+.navbar .nav-link.active {
+  color: #F8EEDC !important;
+  font-weight: bold;
+}
+
+.navbar .navbar-brand {
+  color: #F8EEDC !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,\
+<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'>\
+<path stroke='rgba(248, 238, 220, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/>\
+</svg>");
+}
+
+.navbar-toggler {
+  border-color: #D66344 !important;
+}
+
+.navbar-nav {
+  margin-left: auto; /* skubber nav-items til højre */
+  margin-right: 50px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 40px; /* afstand mellem items */
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* fjerner margin på sidste item */
+}
+
