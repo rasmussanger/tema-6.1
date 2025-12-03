@@ -105,11 +105,11 @@ body{
 }
 
 .accordion-button.collapsed {
-  background-color: #F5C87A; /* blå baggrund */
+  background-color: #E6B566B3; /* blå baggrund */
 }
 
 .accordion-button {
-  background-color: #F5C87A; /* mørkere blå */
+  background-color: #F5C87AB3; /* mørkere blå */
 }
 
 /* Fjern alle borders og shadows */
@@ -132,7 +132,7 @@ body{
   width: 90%;        /* ønsket bredde */
   max-width: 1300px;  /* valgfri begrænsning */
   margin: 0 auto;    /* centrerer indholdet */
-  background-color: #F5C87A; /* blå farve */
+  background-color: #F5C87AB3; /* blå farve */
 }
 
 @media (max-width: 992px) {
@@ -145,12 +145,12 @@ body{
 
 /* Accordion item baggrund */
 .accordion-item {
-  background-color: #F5C87A; /* sæt den ønskede farve */
+  background-color: #F5C87AB3; /* sæt den ønskede farve */
 }
 
 /* Accordion-knappen når åben */
 .accordion-button:not(.collapsed) {
-  background-color: #E6B566; /* den farve du ønsker */
+  background-color: #E6B566B3; /* den farve du ønsker */
   color: black;              /* ændrer tekstfarve, hvis nødvendigt */
 }
 
