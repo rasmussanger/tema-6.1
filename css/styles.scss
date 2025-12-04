@@ -130,15 +130,15 @@ body{
 
 .accordion-body {
   width: 90%;        /* ønsket bredde */
-  max-width: 1300px;  /* valgfri begrænsning */
+  max-width: 700px;  /* valgfri begrænsning */
   margin: 0 auto;    /* centrerer indholdet */
   background-color: #F5C87AB3; /* blå farve */
 }
 
 @media (max-width: 992px) {
   .accordion-body {
-    width: 90%;        /* ønsket bredde */
-    max-width: 400px;  /* valgfri begrænsning */
+    width: 100%; /* ønsket bredde */
+    max-width: 325px;
     margin: 0 auto;    /* centrerer indholdet */
   }
 }
@@ -152,5 +152,57 @@ body{
 .accordion-button:not(.collapsed) {
   background-color: #E6B566B3; /* den farve du ønsker */
   color: black;              /* ændrer tekstfarve, hvis nødvendigt */
+}
+
+.dinmorhaha{
+  height: 500px;
+  width: 700px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+.carousel-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+#carouselExampleIndicators {
+  width: fit-content;
+  margin: 0 auto;      /* centrerer hele karrusellen */
+}
+
+@media (max-width: 992px){
+  .dinmorhaha{
+    height: 300px;
+    width: 90%;
+  }
+}
+
+.stboks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #466E4D;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.stboks a{
+  color: #F5C87AE6;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+@media (max-width: 992px){
+  .stboks{
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+.svgh{
+  text-align: center;
 }
 
